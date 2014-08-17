@@ -1,0 +1,18 @@
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+[user]
+	name = m
+	email = mokuzu0@gmail.com
+
+[alias]
+	st = status
+	co = checkout
+	cm = commit
+	ci = commit
+	br = branch
+	log-all = log --graph --all --color --pretty='%x09%h %cn%x09%s %Cred%d%Creset'
+[core]
+	excludesfile = ~/.gitignore_global
+	editor = /usr/bin/vim
