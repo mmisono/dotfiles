@@ -1,12 +1,14 @@
 #!/bin/sh
 
-mkdir -p ~/.vimbackup
-mkdir -p ~/.viminfo
-mkdir -p ~/.vimundo
-mkdir -p ~/tmp
+DIR=`pwd`
 
-ln -s .vimrc ~/.vimrc
-ln -s .tmux.conf ~/.tmux.conf
-ln -s .zshrc ~/.zshrc
-ln -s .gitconfig ~/.gitconfig
-ln -s .gitignore_global ~/.gitignore_global
+mkdir -p $HOME/.vimbackup 2>/dev/null
+mkdir -p $HOME/.viminfo 2>/dev/null
+mkdir -p $HOME/.vimundo 2>/dev/null
+mkdir -p $HOME/tmp 2>/dev/null
+
+ln -s $DIR/.vimrc $HOME/.vimrc
+ln -s $DIR/.tmux.conf $HOME/.tmux.conf
+ln -s $DIR/.zshrc $HOME/.zshrc
+ln -s $DIR/.gitconfig $HOME/.gitconfig
+ln -s $DIR/.gitignore_global $HOME/.gitignore_global
