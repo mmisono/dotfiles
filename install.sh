@@ -1,6 +1,6 @@
 #!/bin/sh
 
-DIR=`pwd`
+DIR=`dirname $0`
 
 mkdir -p $HOME/.vimbackup 2>/dev/null
 mkdir -p $HOME/.viminfo 2>/dev/null
